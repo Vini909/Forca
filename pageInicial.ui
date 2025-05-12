@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Forca_img - Copia2/Forca_img - Copia/telafundo 1.png</pixmap>
+     <pixmap>Forca_img/telafundo 1.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -46,7 +46,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Forca_img - Copia2/Forca_img - Copia/Rectangle 15.png</pixmap>
+     <pixmap>Forca_img/Rectangle 15.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -62,7 +62,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Forca_img - Copia2/Forca_img - Copia/Component 13.png</pixmap>
+     <pixmap>Forca_img/Component 13.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -85,7 +85,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>Forca_img - Copia2/Forca_img - Copia/ButtomStart.png</normaloff>Forca_img - Copia2/Forca_img - Copia/ButtomStart.png</iconset>
+      <normaloff>Forca_img/ButtomStart.png</normaloff>Forca_img/ButtomStart.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -111,7 +111,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>Forca_img - Copia2/Forca_img - Copia/ButtomPT.png</normaloff>Forca_img - Copia2/Forca_img - Copia/ButtomPT.png</iconset>
+      <normaloff>Forca_img/ButtomPT.png</normaloff>Forca_img/ButtomPT.png</iconset>
     </property>
     <property name="iconSize">
      <size>
