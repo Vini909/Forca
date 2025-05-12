@@ -86,7 +86,7 @@ class pageCateg(QtWidgets.QMainWindow):
         self.pushButton_4.clicked.connect(self.volt_inic)
         self.pushButton_3.clicked.connect(self.ir_forc)
         self.pushButton_2.clicked.connect(self.ir_forc02)
-        self.pushbutton.clicked.connect(self.ir_forc03)
+        self.pushButton.clicked.connect(self.ir_forc03)
     
     def volt_inic(self):
         self.pageInicial = pageInicial()
