@@ -185,10 +185,6 @@ class forca_game(QtWidgets.QMainWindow):
     def salvar_pontuacao(self):
         with open("pontuacao.txt", "w") as f:
             f.write(str(self.pontuacao))
-
-
-
-
     
     def perdeu(self):
         if self.errada == 7:
@@ -214,7 +210,7 @@ class forca_game(QtWidgets.QMainWindow):
 class forca_game02(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi("", self)
+        uic.loadUi("forca_game.ui", self)
         self.pushButton_4.clicked.connect(self.volt_categ)
         self.pushButton.clicked.connect(self.comidas)
         self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
@@ -297,7 +293,6 @@ class forca_game02(QtWidgets.QMainWindow):
             self.pageVenceu.show()
             self.close()
 
-        
     def volt_categ(self):
         self.pageCateg = pageCateg()
         self.pageCateg.show()
@@ -308,7 +303,7 @@ class forca_game02(QtWidgets.QMainWindow):
 class forca_game03(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi("", self)
+        uic.loadUi("forca_game.ui", self)
         self.pushButton_4.clicked.connect(self.volt_categ)
         self.pushButton.clicked.connect(self.objetos)
         self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
