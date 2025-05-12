@@ -101,13 +101,13 @@ class pageCateg(QtWidgets.QMainWindow):
 
 #-----BOTÃO 02-----#
     def ir_forc02(self):
-        self.forca_game = forca_game02()
+        self.forca_game = forca_game()
         self.forca_game.show()
         self.close()
 
 #-----BOTÃO 03-----#
     def ir_forc03(self):
-        self.forca_game = forca_game03()
+        self.forca_game = forca_game()
         self.forca_game.show()
         self.close()
 
