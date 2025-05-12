@@ -398,6 +398,19 @@ class pagePerdeu(QtWidgets.QMainWindow):
         super().__init__()
         uic.loadUi("pagePerdeu.ui", self)
 
+        self.pushButton.clicked.connect(self.ir_score)
+        self.pushButton_2.clicked.connect(self.volt_inic)
+
+    def ir_score(self):
+        self.pont4 = pont4()
+        self.pont4.show()
+        self.close()
+
+    def volt_inic(self):
+        self.pageInicial = pageInicial()
+        self.pageInicial.show()
+        self.close()
+
 
 
 
@@ -409,6 +422,7 @@ class pont4(QtWidgets.QMainWindow):
         self.carregar_pontuacao()
         self.imag()
         self.create_labels()
+        self.pushButton_2.clicked.connect(self.volt_inic)
     
     def create_labels(self):
         self.layout = QHBoxLayout()
@@ -465,6 +479,11 @@ class pont4(QtWidgets.QMainWindow):
                                     img = f"./Forca_img/40.png"
                                     piximg = QPixmap(img)
                                     self.label_4.setPixmap(piximg) 
+
+    def volt_inic(self):
+        self.pageInicial = pageInicial()
+        self.pageInicial.show()
+        self.close()
                 
     
 
@@ -474,11 +493,18 @@ class pageVenceu(QtWidgets.QMainWindow):
         uic.loadUi("pageVenceu.ui", self)
 
         self.pushButton.clicked.connect(self.ir_score)
+        self.pushButton_2.clicked.connect(self.volt_inic)
 
     def ir_score(self):
         self.pont4 = pont4()
         self.pont4.show()
         self.close()
+
+    def volt_inic(self):
+        self.pageInicial = pageInicial()
+        self.pageInicial.show()
+        self.close()
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
