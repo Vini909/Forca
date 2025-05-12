@@ -374,10 +374,6 @@ class forca_game03(QtWidgets.QMainWindow):
         with open("pontuacao.txt", "w") as f:
             f.write(str(self.pontuacao))
 
-
-
-
-    
     def perdeu(self):
         if self.errada == 7:
             self.pagePerdeu = pagePerdeu()

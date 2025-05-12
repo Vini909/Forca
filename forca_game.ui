@@ -126,8 +126,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>1134</x>
-      <y>280</y>
+      <x>1280</x>
+      <y>440</y>
       <width>171</width>
       <height>81</height>
      </rect>
@@ -139,24 +139,55 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>832</x>
-      <y>909</y>
-      <width>221</width>
-      <height>51</height>
+      <x>810</x>
+      <y>900</y>
+      <width>291</width>
+      <height>61</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+border-radius: 15px;
+background-color: rgb(238, 238, 238);
+color: black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Tente a letra</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>340</x>
       <y>900</y>
       <width>161</width>
-      <height>31</height>
+      <height>61</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+border-radius: 15px;
+background-color: #BD5555;
+color: white;</string>
+    </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>COMFIRMAR</string>
     </property>
    </widget>
    <zorder>label_2</zorder>
