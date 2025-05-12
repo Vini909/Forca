@@ -66,10 +66,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../../Downloads/Default.png</normaloff>
-      <normalon>../../../../Downloads/Default.png</normalon>
-      <selectedoff>../../../../Downloads/Property 1=Variant2.png</selectedoff>
-      <selectedon>../../../../Downloads/Property 1=Variant2.png</selectedon>../../../../Downloads/Default.png</iconset>
+      <normaloff>Forca_img/Default.png</normaloff>Forca_img/Default.png</iconset>
     </property>
     <property name="iconSize">
      <size>
