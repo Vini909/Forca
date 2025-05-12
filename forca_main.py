@@ -117,9 +117,10 @@ class forca_game(QtWidgets.QMainWindow):
         super().__init__()
         uic.loadUi("forca_game.ui", self)
         self.pushButton_4.clicked.connect(self.volt_categ)
-        self.pushButton.clicked.connect(self.animal)
         self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
         self.carregar_pontuacao()
+
+        self.animal()
     
     def animal(self):
         self.animal = [
@@ -212,9 +213,10 @@ class forca_game02(QtWidgets.QMainWindow):
         super().__init__()
         uic.loadUi("forca_game.ui", self)
         self.pushButton_4.clicked.connect(self.volt_categ)
-        self.pushButton.clicked.connect(self.comidas)
         self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
         self.carregar_pontuacao()
+
+        self.comidas()
     
     def comidas(self):
         self.comidas = [
@@ -305,9 +307,10 @@ class forca_game03(QtWidgets.QMainWindow):
         super().__init__()
         uic.loadUi("forca_game.ui", self)
         self.pushButton_4.clicked.connect(self.volt_categ)
-        self.pushButton.clicked.connect(self.objetos)
         self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
         self.carregar_pontuacao()
+
+        self.objetos()
     
     def objetos(self):
         self.objetos = [
