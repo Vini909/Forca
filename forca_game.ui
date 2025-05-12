@@ -80,7 +80,7 @@
      <rect>
       <x>860</x>
       <y>80</y>
-      <width>222</width>
+      <width>341</width>
       <height>408</height>
      </rect>
     </property>
@@ -121,19 +121,6 @@
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>1280</x>
-      <y>440</y>
-      <width>171</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
@@ -196,7 +183,6 @@ color: white;</string>
    <zorder>label_3</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
-   <zorder>pushButton</zorder>
    <zorder>lineEdit</zorder>
    <zorder>pushButton_2</zorder>
   </widget>

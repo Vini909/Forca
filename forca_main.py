@@ -429,9 +429,9 @@ class pont4(QtWidgets.QMainWindow):
     
     def create_labels(self):
         self.layout = QHBoxLayout()
-        self.font = QFont("Arial", 50)  # Define a fonte e o tamanho
-        self.score_label = QLabel(f"Pontuação: {self.pontuacao}")
-        self.score_label.setFont(QFont("Arial", 20))
+        self.font = QFont("Arial", 60)  # Define a fonte e o tamanho
+        self.score_label = QLabel(f"{self.pontuacao}")
+        self.score_label.setFont(QFont("Arial", 50))
         self.score_label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(self.score_label)
 
