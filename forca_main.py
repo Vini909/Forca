@@ -85,17 +85,33 @@ class pageCateg(QtWidgets.QMainWindow):
         uic.loadUi("pageCateg.ui", self)
         self.pushButton_4.clicked.connect(self.volt_inic)
         self.pushButton_3.clicked.connect(self.ir_forc)
+        self.pushButton_2.clicked.connect(self.ir_forc02)
+        self.pushbutton.clicked.connect(self.ir_forc03)
     
     def volt_inic(self):
         self.pageInicial = pageInicial()
         self.pageInicial.show()
         self.close()
     
+#-----BOTÃO 01-----#
     def ir_forc(self):
         self.forca_game = forca_game()
         self.forca_game.show()
         self.close()
 
+#-----BOTÃO 02-----#
+    def ir_forc02(self):
+        self.forca_game = forca_game02()
+        self.forca_game.show()
+        self.close()
+
+#-----BOTÃO 03-----#
+    def ir_forc03(self):
+        self.forca_game = forca_game03()
+        self.forca_game.show()
+        self.close()
+
+#----------LISTA 01----------#
 class forca_game(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
@@ -119,6 +135,199 @@ class forca_game(QtWidgets.QMainWindow):
             "lobo"
         ]       
         self.secreta = random.choice(self.animal)
+        self.certa = ["_"] * len(self.secreta)
+        self.errada = 1  # Inicializa o contador de erros
+        
+        self.create_labels()
+    
+    def create_labels(self):
+        self.layout = QHBoxLayout()
+        self.font = QFont("Arial", 50)  # Define a fonte e o tamanho
+        self.labels = []
+        for i in range(len(self.secreta)):
+            label = QLabel("_")
+            label.setFont(self.font)  # Aplica a fonte ao label
+            label.setAlignment(Qt.AlignCenter)
+            self.layout.addWidget(label)
+            self.labels.append(label)
+        
+        self.label_5.setLayout(self.layout)  # Adiciona o layout ao label_5
+    
+    def check_letter(self):
+        letter = self.lineEdit.text().lower()  # Usa o QLineEdit existente
+        if letter in self.secreta:
+            for i, char in enumerate(self.secreta):
+                if char == letter:
+                    self.labels[i].setText(letter)
+        
+        else:
+            self.errada += 1
+            img = f"./Forca_img/0{self.errada}.png"
+            piximg = QPixmap(img)
+            self.label_3.setPixmap(piximg)
+            
+            self.perdeu()
+     
+        self.lineEdit.clear()
+
+
+        if all(label.text() != "_" for label in self.labels):
+            self.venceu()
+
+        
+    def carregar_pontuacao(self):
+        try:
+            with open("pontuacao.txt", "r") as f:
+                self.pontuacao = int(f.read())
+        except (FileNotFoundError, ValueError):
+            self.pontuacao = 0
+
+    def salvar_pontuacao(self):
+        with open("pontuacao.txt", "w") as f:
+            f.write(str(self.pontuacao))
+
+
+
+
+    
+    def perdeu(self):
+        if self.errada == 7:
+            self.pagePerdeu = pagePerdeu()
+            self.pagePerdeu.show()
+            self.close()
+    
+    def venceu(self):
+            self.pontuacao += 100
+            self.salvar_pontuacao()
+            self.pageVenceu = pageVenceu()
+            self.pageVenceu.show()
+            self.close()
+
+        
+    def volt_categ(self):
+        self.pageCateg = pageCateg()
+        self.pageCateg.show()
+        self.close()
+
+#----------LISTA 02----------#
+
+class forca_game02(QtWidgets.QMainWindow):
+    def __init__(self):
+        super().__init__()
+        uic.loadUi("", self)
+        self.pushButton_4.clicked.connect(self.volt_categ)
+        self.pushButton.clicked.connect(self.comidas)
+        self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
+        self.carregar_pontuacao()
+    
+    def comidas(self):
+        self.comidas = [
+            "pizza",
+            "hambúrguer",
+            "arroz",
+            "feijão",
+            "lasanha",
+            "sushi",
+            "salada",
+            "frango assado",
+            "macarrão",
+            "panqueca"
+        ]     
+        self.secreta = random.choice(self.comidas)
+        self.certa = ["_"] * len(self.secreta)
+        self.errada = 1  # Inicializa o contador de erros
+        
+        self.create_labels()
+    
+    def create_labels(self):
+        self.layout = QHBoxLayout()
+        self.font = QFont("Arial", 50)  # Define a fonte e o tamanho
+        self.labels = []
+        for i in range(len(self.secreta)):
+            label = QLabel("_")
+            label.setFont(self.font)  # Aplica a fonte ao label
+            label.setAlignment(Qt.AlignCenter)
+            self.layout.addWidget(label)
+            self.labels.append(label)
+        
+        self.label_5.setLayout(self.layout)  # Adiciona o layout ao label_5
+    
+    def check_letter(self):
+        letter = self.lineEdit.text().lower()  # Usa o QLineEdit existente
+        if letter in self.secreta:
+            for i, char in enumerate(self.secreta):
+                if char == letter:
+                    self.labels[i].setText(letter)
+        
+        else:
+            self.errada += 1
+            img = f"./Forca_img/0{self.errada}.png"
+            piximg = QPixmap(img)
+            self.label_3.setPixmap(piximg)
+            
+            self.perdeu()
+     
+        self.lineEdit.clear()
+
+
+        if all(label.text() != "_" for label in self.labels):
+            self.venceu()
+   
+    def carregar_pontuacao(self):
+        try:
+            with open("pontuacao.txt", "r") as f:
+                self.pontuacao = int(f.read())
+        except (FileNotFoundError, ValueError):
+            self.pontuacao = 0
+
+    def salvar_pontuacao(self):
+        with open("pontuacao.txt", "w") as f:
+            f.write(str(self.pontuacao))
+
+    def perdeu(self):
+        if self.errada == 7:
+            self.pagePerdeu = pagePerdeu()
+            self.pagePerdeu.show()
+            self.close()
+    
+    def venceu(self):
+            self.pontuacao += 100
+            self.salvar_pontuacao()
+            self.pageVenceu = pageVenceu()
+            self.pageVenceu.show()
+            self.close()
+
+        
+    def volt_categ(self):
+        self.pageCateg = pageCateg()
+        self.pageCateg.show()
+        self.close()
+
+#----------LISTA 03----------#
+
+class forca_game03(QtWidgets.QMainWindow):
+    def __init__(self):
+        super().__init__()
+        uic.loadUi("", self)
+        self.pushButton_4.clicked.connect(self.volt_categ)
+        self.pushButton.clicked.connect(self.objetos)
+        self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
+        self.carregar_pontuacao()
+    
+    def objetos(self):
+        self.objetos = [
+            "cadeira",
+            "mesa",
+            "lápis",
+            "caderno",
+            "computador",
+            "celular",
+            "garrafa",
+            "mochila",
+            "óculos",
+            "controle remoto"
+        ]   
+        self.secreta = random.choice(self.objetos)
         self.certa = ["_"] * len(self.secreta)
         self.errada = 1  # Inicializa o contador de erros
         
