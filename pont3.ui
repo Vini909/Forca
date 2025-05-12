@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/telafundo.png</pixmap>
+     <pixmap>Forca_img/telafundo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -46,7 +46,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/Rectangle 14 (1).png</pixmap>
+     <pixmap>Forca_img/Rectangle 14 (1).png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -91,7 +91,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/Group 9.png</pixmap>
+     <pixmap>Forca_img/Group 9.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -107,7 +107,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/Group 8 (1).png</pixmap>
+     <pixmap>Forca_img/Group 8 (1).png</pixmap>
     </property>
    </widget>
   </widget>

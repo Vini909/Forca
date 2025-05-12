@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'pontuação-03.ui'
+# Form implementation generated from reading ui file 'pont3.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -20,35 +20,32 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(0, -40, 2104, 1089))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("../../../../Downloads/telafundo.png"))
+        self.label.setPixmap(QtGui.QPixmap("Forca_img/telafundo.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(170, 20, 1600, 967))
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("../../../../Downloads/Rectangle 14 (1).png"))
+        self.label_2.setPixmap(QtGui.QPixmap("Forca_img/Rectangle 14 (1).png"))
         self.label_2.setObjectName("label_2")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(50, 860, 100, 100))
         self.pushButton_2.setStyleSheet("background-color:transparent;")
         self.pushButton_2.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../../Downloads/Default.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap("../../../../Downloads/Default.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-        icon.addPixmap(QtGui.QPixmap("../../../../Downloads/Property 1=Variant2.png"), QtGui.QIcon.Selected, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap("../../../../Downloads/Property 1=Variant2.png"), QtGui.QIcon.Selected, QtGui.QIcon.On)
+        icon.addPixmap(QtGui.QPixmap("Forca_img/Default.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_2.setIcon(icon)
         self.pushButton_2.setIconSize(QtCore.QSize(100, 100))
         self.pushButton_2.setObjectName("pushButton_2")
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
         self.label_6.setGeometry(QtCore.QRect(710, 0, 536, 99))
         self.label_6.setText("")
-        self.label_6.setPixmap(QtGui.QPixmap("../../../../Downloads/Group 9.png"))
+        self.label_6.setPixmap(QtGui.QPixmap("Forca_img/Group 9.png"))
         self.label_6.setObjectName("label_6")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(400, 100, 1123, 874))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("../../../../Downloads/Group 8 (1).png"))
+        self.label_3.setPixmap(QtGui.QPixmap("Forca_img/Group 8 (1).png"))
         self.label_3.setObjectName("label_3")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)

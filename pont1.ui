@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/telafundo.png</pixmap>
+     <pixmap>Forca_img/telafundo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -46,7 +46,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/Rectangle 14.png</pixmap>
+     <pixmap>Forca_img/Rectangle 14.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -62,7 +62,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/Group 2.png</pixmap>
+     <pixmap>Forca_img/Group 2.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -78,7 +78,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/Group 3.png</pixmap>
+     <pixmap>Forca_img/Group 3.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -94,7 +94,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/Group 4.png</pixmap>
+     <pixmap>Forca_img/Group 4.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="avancar_2">
@@ -114,10 +114,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../../Downloads/ButtomPross.png</normaloff>
-      <normalon>../../../../Downloads/ButtomPross.png</normalon>
-      <selectedoff>../../../../Downloads/Property 1=Variant2.png</selectedoff>
-      <selectedon>../../../../Downloads/Property 1=Variant2.png</selectedon>../../../../Downloads/ButtomPross.png</iconset>
+      <normaloff>Forca_img/ButtomPross.png</normaloff>Forca_img/ButtomPross.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -143,10 +140,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../../Downloads/Default.png</normaloff>
-      <normalon>../../../../Downloads/Default.png</normalon>
-      <selectedoff>../../../../Downloads/Property 1=Variant2.png</selectedoff>
-      <selectedon>../../../../Downloads/Property 1=Variant2.png</selectedon>../../../../Downloads/Default.png</iconset>
+      <normaloff>Forca_img/Default.png</normaloff>Forca_img/Default.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -168,7 +162,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/Component 12.png</pixmap>
+     <pixmap>Forca_img/Component 12.png</pixmap>
     </property>
    </widget>
   </widget>
