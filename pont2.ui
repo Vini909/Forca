@@ -62,7 +62,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Forca_img/Group 5.png</pixmap>
+     <pixmap>Forca_img/BLOQ.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -78,7 +78,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Forca_img/Group 6.png</pixmap>
+     <pixmap>Forca_img/BLOQ.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -94,7 +94,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Forca_img/Group 7.png</pixmap>
+     <pixmap>Forca_img/BLOQ.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
