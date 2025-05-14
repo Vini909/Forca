@@ -119,9 +119,6 @@
     <property name="text">
      <string/>
     </property>
-    <property name="pixmap">
-     <pixmap>Forca_img/40.png</pixmap>
-    </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>

@@ -50,7 +50,6 @@ class Ui_MainWindow(object):
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(720, 450, 500, 500))
         self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("Forca_img/40.png"))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
