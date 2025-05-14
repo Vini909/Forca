@@ -110,17 +110,17 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>510</y>
-      <width>300</width>
-      <height>300</height>
+      <x>720</x>
+      <y>450</y>
+      <width>500</width>
+      <height>500</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Forca_img/11.png</pixmap>
+     <pixmap>Forca_img/40.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

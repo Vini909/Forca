@@ -40,6 +40,31 @@ class pont1(QtWidgets.QMainWindow):
         uic.loadUi("pont1.ui", self)
         self.voltar.clicked.connect(self.volt_inic)
         self.avancar_2.clicked.connect(self.ir_pont2)
+        self.carregar_pontuacao()
+        self.imag()
+
+    def carregar_pontuacao(self):
+        try:
+            with open("pontuacao.txt", "r") as f:
+                self.pontuacao = int(f.read())
+        except (FileNotFoundError, ValueError):
+            self.pontuacao = 0
+
+    def imag(self):
+        if self.pontuacao >= 500:
+            img = f"./Forca_img/Group 2.png"
+            piximg = QPixmap(img)
+            self.label_3.setPixmap(piximg)
+        
+        if self.pontuacao >= 1000:
+            img = f"./Forca_img/Group 3.png"
+            piximg = QPixmap(img)
+            self.label_4.setPixmap(piximg)
+        
+        if self.pontuacao >= 1500:
+            img = f"./Forca_img/Group 4.png"
+            piximg = QPixmap(img)
+            self.label_5.setPixmap(piximg)
     
     def volt_inic(self):
         self.pageInicial = pageInicial()
@@ -57,6 +82,31 @@ class pont2(QtWidgets.QMainWindow):
         uic.loadUi("pont2.ui", self)
         self.pushButton_2.clicked.connect(self.volt_inic)
         self.pushButton.clicked.connect(self.ir_pont3)
+        self.carregar_pontuacao()
+        self.imag()
+
+    def carregar_pontuacao(self):
+        try:
+            with open("pontuacao.txt", "r") as f:
+                self.pontuacao = int(f.read())
+        except (FileNotFoundError, ValueError):
+            self.pontuacao = 0
+
+    def imag(self):
+        if self.pontuacao >= 2000:
+            img = f"./Forca_img/Group 5.png"
+            piximg = QPixmap(img)
+            self.label_3.setPixmap(piximg)
+        
+        if self.pontuacao >= 2500:
+            img = f"./Forca_img/Group 6.png"
+            piximg = QPixmap(img)
+            self.label_4.setPixmap(piximg)
+        
+        if self.pontuacao >= 3000:
+            img = f"./Forca_img/Group 7.png"
+            piximg = QPixmap(img)
+            self.label_5.setPixmap(piximg)
     
     def volt_inic(self):
         self.pageInicial = pageInicial()
@@ -68,16 +118,35 @@ class pont2(QtWidgets.QMainWindow):
         self.pont3.show()
         self.close()
 
+    
 class pont3(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("pont3.ui", self)
         self.pushButton_2.clicked.connect(self.volt_inic)
+        self.carregar_pontuacao()
+        self.imag()
+
+    def carregar_pontuacao(self):
+        try:
+            with open("pontuacao.txt", "r") as f:
+                self.pontuacao = int(f.read())
+        except (FileNotFoundError, ValueError):
+            self.pontuacao = 0
+
+    def imag(self):
+        if self.pontuacao >= 5000:
+            img = f"./Forca_img/Group 8 (1).png"
+            piximg = QPixmap(img)
+            self.label_3.setPixmap(piximg)
+        
     
     def volt_inic(self):
         self.pageInicial = pageInicial()
         self.pageInicial.show()
         self.close()
+
+    
 
 class pageCateg(QtWidgets.QMainWindow):
     def __init__(self):

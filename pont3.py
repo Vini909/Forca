@@ -45,7 +45,7 @@ class Ui_MainWindow(object):
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(400, 100, 1123, 874))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("Forca_img/Group 8 (1).png"))
+        self.label_3.setPixmap(QtGui.QPixmap("Forca_img/Component 16.png"))
         self.label_3.setObjectName("label_3")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
