@@ -5,7 +5,7 @@ from PyQt5 import QtWidgets, uic
 from PyQt5.QtGui import QFont, QPixmap
 from PyQt5.QtCore import Qt
 
-# Importação das interfaces
+
 from pageInicial import Ui_MainWindow 
 from pageCateg import Ui_MainWindow 
 from pagePerdeu import Ui_MainWindow 
@@ -162,31 +162,31 @@ class pageCateg(QtWidgets.QMainWindow):
         self.pageInicial.show()
         self.close()
     
-#-----BOTÃO 01-----#
+
     def ir_forc(self):
         self.forca_game = forca_game()
         self.forca_game.show()
         self.close()
 
-#-----BOTÃO 02-----#
+
     def ir_forc02(self):
         self.forca_game = forca_game02()
         self.forca_game.show()
         self.close()
 
-#-----BOTÃO 03-----#
+
     def ir_forc03(self):
         self.forca_game = forca_game03()
         self.forca_game.show()
         self.close()
 
-#----------LISTA 01----------#
+
 class forca_game(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("forca_game.ui", self)
         self.pushButton_4.clicked.connect(self.volt_categ)
-        self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
+        self.pushButton_2.clicked.connect(self.check_letter) 
         self.carregar_pontuacao()
 
         self.animal()
@@ -206,25 +206,25 @@ class forca_game(QtWidgets.QMainWindow):
         ]       
         self.secreta = random.choice(self.animal)
         self.certa = ["_"] * len(self.secreta)
-        self.errada = 1  # Inicializa o contador de erros
+        self.errada = 1  
         
         self.create_labels()
     
     def create_labels(self):
         self.layout = QHBoxLayout()
-        self.font = QFont("Arial", 50)  # Define a fonte e o tamanho
+        self.font = QFont("Arial", 50)  
         self.labels = []
         for i in range(len(self.secreta)):
             label = QLabel("_")
-            label.setFont(self.font)  # Aplica a fonte ao label
+            label.setFont(self.font)  
             label.setAlignment(Qt.AlignCenter)
             self.layout.addWidget(label)
             self.labels.append(label)
         
-        self.label_5.setLayout(self.layout)  # Adiciona o layout ao label_5
+        self.label_5.setLayout(self.layout)  
     
     def check_letter(self):
-        letter = self.lineEdit.text().lower()  # Usa o QLineEdit existente
+        letter = self.lineEdit.text().lower()  
         if letter in self.secreta:
             for i, char in enumerate(self.secreta):
                 if char == letter:
@@ -275,14 +275,14 @@ class forca_game(QtWidgets.QMainWindow):
         self.pageCateg.show()
         self.close()
 
-#----------LISTA 02----------#
+
 
 class forca_game02(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("forca_game.ui", self)
         self.pushButton_4.clicked.connect(self.volt_categ)
-        self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
+        self.pushButton_2.clicked.connect(self.check_letter)  
         self.carregar_pontuacao()
 
         self.comidas()
@@ -302,25 +302,25 @@ class forca_game02(QtWidgets.QMainWindow):
         ]     
         self.secreta = random.choice(self.comidas)
         self.certa = ["_"] * len(self.secreta)
-        self.errada = 1  # Inicializa o contador de erros
+        self.errada = 1  
         
         self.create_labels()
     
     def create_labels(self):
         self.layout = QHBoxLayout()
-        self.font = QFont("Arial", 50)  # Define a fonte e o tamanho
+        self.font = QFont("Arial", 50)  
         self.labels = []
         for i in range(len(self.secreta)):
             label = QLabel("_")
-            label.setFont(self.font)  # Aplica a fonte ao label
+            label.setFont(self.font)  
             label.setAlignment(Qt.AlignCenter)
             self.layout.addWidget(label)
             self.labels.append(label)
         
-        self.label_5.setLayout(self.layout)  # Adiciona o layout ao label_5
+        self.label_5.setLayout(self.layout)  
     
     def check_letter(self):
-        letter = self.lineEdit.text().lower()  # Usa o QLineEdit existente
+        letter = self.lineEdit.text().lower()  
         if letter in self.secreta:
             for i, char in enumerate(self.secreta):
                 if char == letter:
@@ -369,14 +369,14 @@ class forca_game02(QtWidgets.QMainWindow):
         self.pageCateg.show()
         self.close()
 
-#----------LISTA 03----------#
+
 
 class forca_game03(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("forca_game.ui", self)
         self.pushButton_4.clicked.connect(self.volt_categ)
-        self.pushButton_2.clicked.connect(self.check_letter)  # Conecta o botão de tentativa
+        self.pushButton_2.clicked.connect(self.check_letter)  
         self.carregar_pontuacao()
 
         self.objetos()
@@ -396,25 +396,25 @@ class forca_game03(QtWidgets.QMainWindow):
         ]   
         self.secreta = random.choice(self.objetos)
         self.certa = ["_"] * len(self.secreta)
-        self.errada = 1  # Inicializa o contador de erros
+        self.errada = 1  
         
         self.create_labels()
     
     def create_labels(self):
         self.layout = QHBoxLayout()
-        self.font = QFont("Arial", 50)  # Define a fonte e o tamanho
+        self.font = QFont("Arial", 50)  
         self.labels = []
         for i in range(len(self.secreta)):
             label = QLabel("_")
-            label.setFont(self.font)  # Aplica a fonte ao label
+            label.setFont(self.font)  
             label.setAlignment(Qt.AlignCenter)
             self.layout.addWidget(label)
             self.labels.append(label)
         
-        self.label_5.setLayout(self.layout)  # Adiciona o layout ao label_5
+        self.label_5.setLayout(self.layout)  
     
     def check_letter(self):
-        letter = self.lineEdit.text().lower()  # Usa o QLineEdit existente
+        letter = self.lineEdit.text().lower()  
         if letter in self.secreta:
             for i, char in enumerate(self.secreta):
                 if char == letter:
@@ -498,14 +498,14 @@ class pont4(QtWidgets.QMainWindow):
     
     def create_labels(self):
         self.layout = QHBoxLayout()
-        self.font = QFont("Arial", 60)  # Define a fonte e o tamanho
+        self.font = QFont("Arial", 60)  
         self.score_label = QLabel(f"{self.pontuacao}")
         self.score_label.setFont(QFont("Arial", 50))
         self.score_label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(self.score_label)
 
         
-        self.label_5.setLayout(self.layout)  # Adiciona o layout ao label_5
+        self.label_5.setLayout(self.layout)  
         
      
     def carregar_pontuacao(self):
